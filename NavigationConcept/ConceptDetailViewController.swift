@@ -16,10 +16,21 @@ class ConceptDetailViewController: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var ratingImageView: UIImageView!
 
+    @IBOutlet weak var review1: UIView!
+    @IBOutlet weak var review1ProfileImage: UIImageView!
+    @IBOutlet weak var review2: UIView!
+    @IBOutlet weak var review2ProfileImage: UIImageView!
+    @IBOutlet weak var review3: UIView!
+    @IBOutlet weak var review3ProfileImage: UIImageView!
+    
     var isInitialLoad = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        review1ProfileImage.hidden = true
+        review2ProfileImage.hidden = true
+        review3ProfileImage.hidden = true
         
         headerView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "tapAction"))
     }

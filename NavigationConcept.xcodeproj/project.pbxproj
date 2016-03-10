@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E64798751C914C26003980A9 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64798741C914C26003980A9 /* UIImage.swift */; };
 		E66475FC1C8E4ADD00C9996F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66475FB1C8E4ADD00C9996F /* AppDelegate.swift */; };
 		E66475FE1C8E4ADD00C9996F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66475FD1C8E4ADD00C9996F /* ViewController.swift */; };
 		E66476011C8E4ADD00C9996F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66475FF1C8E4ADD00C9996F /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E64798741C914C26003980A9 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		E66475F81C8E4ADD00C9996F /* NavigationConcept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationConcept.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66475FB1C8E4ADD00C9996F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E66475FD1C8E4ADD00C9996F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				E66476391C8F60A900C9996F /* UIView.swift */,
 				E664764D1C90B07400C9996F /* UILabel.swift */,
+				E64798741C914C26003980A9 /* UIImage.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				E66476121C8E4C2E00C9996F /* ConceptCollectionViewCell.swift in Sources */,
 				E664760E1C8E4B5700C9996F /* ConceptCollectionViewController.swift in Sources */,
 				E66476141C8F127900C9996F /* ConceptCollectionViewLayoutAttributes.swift in Sources */,
+				E64798751C914C26003980A9 /* UIImage.swift in Sources */,
 				E664761A1C8F1BC300C9996F /* ConceptDetailViewController.swift in Sources */,
 				E66476561C90BEE100C9996F /* Review.swift in Sources */,
 				E66475FC1C8E4ADD00C9996F /* AppDelegate.swift in Sources */,
@@ -382,6 +386,7 @@
 				E664760C1C8E4ADD00C9996F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

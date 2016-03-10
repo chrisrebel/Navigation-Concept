@@ -109,6 +109,18 @@ class ConceptCollectionViewController: UICollectionViewController {
             let listingTitleLabelOrigin = cell.listingTitleLabel.superview!.convertRect(cell.listingTitleLabel.frame, toCoordinateSpace: cell.window!).origin
             controller.listingTitleLabelStartingFrame = CGRectMake(listingTitleLabelOrigin.x, listingTitleLabelOrigin.y, CGRectGetWidth(cell.listingTitleLabel.frame), CGRectGetHeight(cell.listingTitleLabel.frame))
             
+            let review1ProfileViewOrigin = cell.profileImage1.superview!.convertRect(cell.profileImage1.frame, toCoordinateSpace: cell.window!).origin
+            controller.review1ProfileViewStartingFrame = CGRectMake(review1ProfileViewOrigin.x, review1ProfileViewOrigin.y, CGRectGetWidth(cell.profileImage1.frame), CGRectGetHeight(cell.profileImage1.frame))
+            controller.review1ProfileView = UIImageView(image: cell.profileImage1.image)
+            
+            let review2ProfileViewOrigin = cell.profileImage2.superview!.convertRect(cell.profileImage2.frame, toCoordinateSpace: cell.window!).origin
+            controller.review2ProfileViewStartingFrame = CGRectMake(review2ProfileViewOrigin.x, review2ProfileViewOrigin.y, CGRectGetWidth(cell.profileImage2.frame), CGRectGetHeight(cell.profileImage2.frame))
+            controller.review2ProfileView = UIImageView(image: cell.profileImage2.image)
+            
+            let review3ProfileViewOrigin = cell.profileImage3.superview!.convertRect(cell.profileImage3.frame, toCoordinateSpace: cell.window!).origin
+            controller.review3ProfileViewStartingFrame = CGRectMake(review3ProfileViewOrigin.x, review3ProfileViewOrigin.y, CGRectGetWidth(cell.profileImage3.frame), CGRectGetHeight(cell.profileImage3.frame))
+            controller.review3ProfileView = UIImageView(image: cell.profileImage3.image)
+            
             controller.delegate = self
             controller.modalPresentationStyle = .OverCurrentContext
             self.modalPresentationStyle = .OverCurrentContext
@@ -138,12 +150,12 @@ class ConceptCollectionViewController: UICollectionViewController {
 extension ConceptCollectionViewController: ConceptDetailAnimationTransitionViewControllerDelegate {
     
     func conceptDetailAnimationTransitionViewControllerDelegateDidStartAnimateIn(conceptDetailAnimationTransitionViewController: ConceptDetailAnimationTransitionViewController) {
-        collectionView?.hidden = true
+        expandedCell?.hidden = true
         NSNotificationCenter.defaultCenter().postNotificationName("didShowDetails", object: self)
     }
     
     func conceptDetailAnimationTransitionViewControllerDidCompleteAnimateIn(conceptDetailAnimationTransitionViewController: ConceptDetailAnimationTransitionViewController) {
-        collectionView?.hidden = false
+        expandedCell?.hidden = false
         NSNotificationCenter.defaultCenter().postNotificationName("willHideDetails", object: self)
     }
 }

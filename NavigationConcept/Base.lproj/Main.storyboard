@@ -673,16 +673,16 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="FEB 14TH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qb-KK-uZ6">
-                                                        <rect key="frame" x="237" y="28" width="51" height="14"/>
+                                                        <rect key="frame" x="239" y="28" width="51" height="14"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="Hmn-ih-cat">
-                                                        <rect key="frame" x="325" y="25" width="20" height="20"/>
+                                                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="Hmn-ih-cat">
+                                                        <rect key="frame" x="327" y="26" width="18" height="18"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="20" id="1Dd-wh-0n2"/>
-                                                            <constraint firstAttribute="height" constant="20" id="dmX-EM-anz"/>
+                                                            <constraint firstAttribute="width" constant="18" id="1Dd-wh-0n2"/>
+                                                            <constraint firstAttribute="height" constant="18" id="dmX-EM-anz"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dds-Gx-buQ">
@@ -693,13 +693,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peter Allen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Lw-FJ-AbW">
-                                                        <rect key="frame" x="105" y="26" width="86" height="18"/>
+                                                        <rect key="frame" x="105" y="26" width="88" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                         <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="Hmn-ih-cat" firstAttribute="centerY" secondItem="7Qb-KK-uZ6" secondAttribute="centerY" id="2t7-Yr-TRN"/>
                                                     <constraint firstAttribute="trailing" secondItem="Hmn-ih-cat" secondAttribute="trailing" constant="30" id="EkY-X8-zhz"/>
@@ -727,22 +727,22 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amanda Lin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNH-dL-fm0">
-                                                        <rect key="frame" x="105" y="26" width="86" height="18"/>
+                                                        <rect key="frame" x="105" y="26" width="88" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                         <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="FEB 14TH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RK-Be-t3X">
-                                                        <rect key="frame" x="237" y="28" width="51" height="14"/>
+                                                        <rect key="frame" x="239" y="28" width="51" height="14"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="FJF-2T-qDZ">
-                                                        <rect key="frame" x="325" y="25" width="20" height="20"/>
+                                                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="FJF-2T-qDZ">
+                                                        <rect key="frame" x="327" y="26" width="18" height="18"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="20" id="Z3P-eB-dv2"/>
-                                                            <constraint firstAttribute="height" constant="20" id="wgL-Am-das"/>
+                                                            <constraint firstAttribute="width" constant="18" id="Z3P-eB-dv2"/>
+                                                            <constraint firstAttribute="height" constant="18" id="wgL-Am-das"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbj-8B-dCn">
@@ -781,22 +781,22 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jim Thomas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ii-TH-qic">
-                                                        <rect key="frame" x="105" y="26" width="86" height="18"/>
+                                                        <rect key="frame" x="105" y="26" width="88" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                         <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="FEB 14TH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PO4-C7-iOw">
-                                                        <rect key="frame" x="237" y="28" width="51" height="14"/>
+                                                        <rect key="frame" x="239" y="28" width="51" height="14"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="AjW-3g-5Un">
-                                                        <rect key="frame" x="325" y="25" width="20" height="20"/>
+                                                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="AjW-3g-5Un">
+                                                        <rect key="frame" x="327" y="26" width="18" height="18"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="20" id="8or-cN-vl9"/>
-                                                            <constraint firstAttribute="height" constant="20" id="BwV-ho-h7J"/>
+                                                            <constraint firstAttribute="width" constant="18" id="8or-cN-vl9"/>
+                                                            <constraint firstAttribute="height" constant="18" id="BwV-ho-h7J"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dku-YB-vEl">
@@ -909,6 +909,12 @@
                         <outlet property="contentView" destination="f34-pJ-sP7" id="H6r-dI-dGg"/>
                         <outlet property="headerView" destination="7j6-Vq-bpc" id="79r-pc-MMH"/>
                         <outlet property="ratingImageView" destination="db8-aH-MU8" id="1tN-j2-m0M"/>
+                        <outlet property="review1" destination="Csa-iw-895" id="exL-D7-LZw"/>
+                        <outlet property="review1ProfileImage" destination="yQ1-2s-R4T" id="6Df-cr-2Dd"/>
+                        <outlet property="review2" destination="ldH-uP-zUa" id="HzH-xn-JTm"/>
+                        <outlet property="review2ProfileImage" destination="xWi-9U-cbL" id="MRA-b6-npF"/>
+                        <outlet property="review3" destination="gAD-3E-RJc" id="q20-xh-ru2"/>
+                        <outlet property="review3ProfileImage" destination="oEq-3w-PBH" id="eE7-2q-HS0"/>
                         <outlet property="scrollView" destination="0hI-gm-3xw" id="B3Z-Uy-7nL"/>
                     </connections>
                 </viewController>
