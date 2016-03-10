@@ -14,7 +14,11 @@ class ConceptDetailViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var addressLabelWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var ratingImageView: UIImageView!
+    @IBOutlet weak var photoView: UIImageView!
+    @IBOutlet weak var bedsLabel: UILabel!
+    @IBOutlet weak var bathsLabel: UILabel!
 
     @IBOutlet weak var review1: UIView!
     @IBOutlet weak var review1ProfileImage: UIImageView!
@@ -24,6 +28,8 @@ class ConceptDetailViewController: UIViewController {
     @IBOutlet weak var review3ProfileImage: UIImageView!
     
     var isInitialLoad = true
+    
+    var listing: Listing!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +48,11 @@ class ConceptDetailViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         if isInitialLoad {
             isInitialLoad = false
+            
+            bedsLabel.text = listing.beds
+            bathsLabel.text = listing.baths
+            addressLabel.text = listing.address
+            photoView.image = UIImage(named: listing.image)
             
             view.setNeedsLayout()
             view.layoutIfNeeded()

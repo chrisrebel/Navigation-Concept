@@ -10,6 +10,7 @@ import UIKit
 
 class ConceptCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var photoContainerView: UIView!
     @IBOutlet weak var photoContainerViewLeadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var photoContainerViewTrailingConstraint: NSLayoutConstraint!
@@ -30,8 +31,20 @@ class ConceptCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var listingTitleLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var ratingImageView: UIImageView!
+    @IBOutlet weak var bedsLabel: UILabel!
+    @IBOutlet weak var bathsLabel: UILabel!
     
     var isExpanded = false
+    
+    var listing: Listing! {
+        didSet {
+            listingTitleLabel.text = listing.name
+            photoView.image = UIImage(named: listing.image)
+            addressLabel.text = listing.address
+            bedsLabel.text = listing.beds
+            bathsLabel.text = listing.baths
+        }
+    }
     
     override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes) {
         super.applyLayoutAttributes(layoutAttributes)

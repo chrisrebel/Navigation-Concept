@@ -20,6 +20,7 @@ class ConceptDetailAnimationTransitionViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var headerView: UIView!
     
+    @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var photoContainerView: UIView!
     @IBOutlet weak var photoContainerViewLeadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var photoContainerViewTrailingConstraint: NSLayoutConstraint!
@@ -47,6 +48,9 @@ class ConceptDetailAnimationTransitionViewController: UIViewController {
     @IBOutlet weak var listingTitleLabelLeadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var listingTitleLabelTrailingConstraint: NSLayoutConstraint!
     @IBOutlet weak var listingTitleLabelTopConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var bedsLabel: UILabel!
+    @IBOutlet weak var bathsLabel: UILabel!
     
     var conceptDetailViewController: ConceptDetailViewController!
     
@@ -84,6 +88,7 @@ class ConceptDetailAnimationTransitionViewController: UIViewController {
     var review3ProfileView: UIImageView!
     var review3: UIView!
     
+    var listing: Listing!
     weak var delegate: ConceptDetailAnimationTransitionViewControllerDelegate?
     
     override func viewDidLoad() {
@@ -132,6 +137,13 @@ class ConceptDetailAnimationTransitionViewController: UIViewController {
         
         review3ProfileView.frame = review3ProfileViewStartingFrame
         view.addSubview(review3ProfileView)
+        
+        photoView.image = UIImage(named: listing.image)
+        listingTitleLabel.text = listing.name
+        bedsLabel.text = listing.beds
+        bathsLabel.text = listing.baths
+        
+        conceptDetailViewController.addressLabelWidthConstraint.constant = addressLabelStartingFrame.width
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -288,6 +300,7 @@ class ConceptDetailAnimationTransitionViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ConceptDetailViewController" {
             conceptDetailViewController = segue.destinationViewController as! ConceptDetailViewController
+            conceptDetailViewController.listing = listing
         }
     }
 }

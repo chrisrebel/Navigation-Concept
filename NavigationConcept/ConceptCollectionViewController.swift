@@ -19,8 +19,9 @@ class ConceptCollectionViewController: UICollectionViewController {
 
     weak var delegate: ConceptCollectionViewControllerDelegate?
     
-    var expandedCell: ConceptCollectionViewCell?
+    var listings: [Listing] = []
     
+    var expandedCell: ConceptCollectionViewCell?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,13 +46,17 @@ class ConceptCollectionViewController: UICollectionViewController {
         if let indexPath = collectionView!.indexPathForItemAtPoint(pointInCollection) {
             if let cell = collectionView!.cellForItemAtIndexPath(indexPath) as? ConceptCollectionViewCell {
                 if let _expandedCell = expandedCell {
-                    if cell != _expandedCell && _expandedCell.isExpanded {
+                    if cell == expandedCell {
+                        selectItemAtIndexPath(indexPath)
+                    } else if _expandedCell.isExpanded {
                         _expandedCell.collapse()
+                        expandedCell = cell
+                        cell.expand()
                     }
+                } else {
+                    expandedCell = cell
+                    cell.expand()
                 }
-                
-                expandedCell = cell
-                cell.expand()
             }
         }
     }
@@ -62,31 +67,18 @@ class ConceptCollectionViewController: UICollectionViewController {
         
         if let indexPath = collectionView!.indexPathForItemAtPoint(pointInCollection) {
             if let cell = collectionView!.cellForItemAtIndexPath(indexPath) as? ConceptCollectionViewCell {
-                cell.collapse()
+                if cell.isExpanded {
+                    cell.collapse()
+                    expandedCell = nil
+                }
             }
         }
     }
     
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
-    }
-
-
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
-    }
-
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ConceptCollectionViewCell
+    func selectItemAtIndexPath(indexPath: NSIndexPath) {
+        let cell = collectionView!.cellForItemAtIndexPath(indexPath) as! ConceptCollectionViewCell
         
-        return cell
-    }
-    
-    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
-        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! ConceptCollectionViewCell
-        
-        if cell.isExpanded {        
+        if cell.isExpanded {
             let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ConceptDetailAnimationTransitionViewController") as! ConceptDetailAnimationTransitionViewController
             
             let photoContainerViewOrigin = cell.convertRect(cell.photoContainerView.frame, toCoordinateSpace: cell.window!).origin
@@ -121,6 +113,7 @@ class ConceptCollectionViewController: UICollectionViewController {
             controller.review3ProfileViewStartingFrame = CGRectMake(review3ProfileViewOrigin.x, review3ProfileViewOrigin.y, CGRectGetWidth(cell.profileImage3.frame), CGRectGetHeight(cell.profileImage3.frame))
             controller.review3ProfileView = UIImageView(image: cell.profileImage3.image)
             
+            controller.listing = listings[indexPath.row]
             controller.delegate = self
             controller.modalPresentationStyle = .OverCurrentContext
             self.modalPresentationStyle = .OverCurrentContext
@@ -136,6 +129,25 @@ class ConceptCollectionViewController: UICollectionViewController {
             expandedCell = cell
             cell.expand()
         }
+    }
+    
+    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+
+
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return listings.count
+    }
+
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ConceptCollectionViewCell
+        cell.listing = listings[indexPath.row]
+        return cell
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        selectItemAtIndexPath(indexPath)
     }
     
     func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize {
