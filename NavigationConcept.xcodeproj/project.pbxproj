@@ -12,6 +12,25 @@
 		E66476011C8E4ADD00C9996F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66475FF1C8E4ADD00C9996F /* Main.storyboard */; };
 		E66476031C8E4ADD00C9996F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66476021C8E4ADD00C9996F /* Assets.xcassets */; };
 		E66476061C8E4ADD00C9996F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66476041C8E4ADD00C9996F /* LaunchScreen.storyboard */; };
+		E664760E1C8E4B5700C9996F /* ConceptCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E664760D1C8E4B5700C9996F /* ConceptCollectionViewController.swift */; };
+		E66476101C8E4B9200C9996F /* ConceptCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E664760F1C8E4B9200C9996F /* ConceptCollectionViewFlowLayout.swift */; };
+		E66476121C8E4C2E00C9996F /* ConceptCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66476111C8E4C2E00C9996F /* ConceptCollectionViewCell.swift */; };
+		E66476141C8F127900C9996F /* ConceptCollectionViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66476131C8F127900C9996F /* ConceptCollectionViewLayoutAttributes.swift */; };
+		E664761A1C8F1BC300C9996F /* ConceptDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66476191C8F1BC300C9996F /* ConceptDetailViewController.swift */; };
+		E664763A1C8F60A900C9996F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66476391C8F60A900C9996F /* UIView.swift */; };
+		E66476411C90731200C9996F /* pier-bold-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E664763D1C8F656900C9996F /* pier-bold-italic.otf */; };
+		E66476421C90731200C9996F /* pier-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E664763E1C8F656900C9996F /* pier-bold.otf */; };
+		E66476431C90731200C9996F /* pier-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E664763F1C8F656900C9996F /* pier-italic.otf */; };
+		E66476441C90731200C9996F /* pier-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E66476401C8F656900C9996F /* pier-regular.otf */; };
+		E66476461C907CD700C9996F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66476451C907CD700C9996F /* QuartzCore.framework */; };
+		E66476481C907D2800C9996F /* BaseCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66476471C907D2800C9996F /* BaseCustomView.swift */; };
+		E664764A1C907D5A00C9996F /* ConceptPageCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66476491C907D5A00C9996F /* ConceptPageCount.swift */; };
+		E664764C1C907D6600C9996F /* ConceptPageCount.xib in Resources */ = {isa = PBXBuildFile; fileRef = E664764B1C907D6600C9996F /* ConceptPageCount.xib */; };
+		E664764E1C90B07400C9996F /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E664764D1C90B07400C9996F /* UILabel.swift */; };
+		E66476521C90BE4600C9996F /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66476511C90BE4600C9996F /* Listing.swift */; };
+		E66476541C90BE8000C9996F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66476531C90BE8000C9996F /* Person.swift */; };
+		E66476561C90BEE100C9996F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66476551C90BEE100C9996F /* Review.swift */; };
+		E66476581C90C2A900C9996F /* ConceptDetailAnimationTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66476571C90C2A900C9996F /* ConceptDetailAnimationTransitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +41,25 @@
 		E66476021C8E4ADD00C9996F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E66476051C8E4ADD00C9996F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E66476071C8E4ADD00C9996F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E664760D1C8E4B5700C9996F /* ConceptCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConceptCollectionViewController.swift; sourceTree = "<group>"; };
+		E664760F1C8E4B9200C9996F /* ConceptCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConceptCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		E66476111C8E4C2E00C9996F /* ConceptCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConceptCollectionViewCell.swift; sourceTree = "<group>"; };
+		E66476131C8F127900C9996F /* ConceptCollectionViewLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConceptCollectionViewLayoutAttributes.swift; sourceTree = "<group>"; };
+		E66476191C8F1BC300C9996F /* ConceptDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConceptDetailViewController.swift; sourceTree = "<group>"; };
+		E66476391C8F60A900C9996F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		E664763D1C8F656900C9996F /* pier-bold-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pier-bold-italic.otf"; sourceTree = "<group>"; };
+		E664763E1C8F656900C9996F /* pier-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pier-bold.otf"; sourceTree = "<group>"; };
+		E664763F1C8F656900C9996F /* pier-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pier-italic.otf"; sourceTree = "<group>"; };
+		E66476401C8F656900C9996F /* pier-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pier-regular.otf"; sourceTree = "<group>"; };
+		E66476451C907CD700C9996F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E66476471C907D2800C9996F /* BaseCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCustomView.swift; sourceTree = "<group>"; };
+		E66476491C907D5A00C9996F /* ConceptPageCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConceptPageCount.swift; sourceTree = "<group>"; };
+		E664764B1C907D6600C9996F /* ConceptPageCount.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConceptPageCount.xib; sourceTree = "<group>"; };
+		E664764D1C90B07400C9996F /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		E66476511C90BE4600C9996F /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		E66476531C90BE8000C9996F /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E66476551C90BEE100C9996F /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		E66476571C90C2A900C9996F /* ConceptDetailAnimationTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConceptDetailAnimationTransitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66476461C907CD700C9996F /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +77,7 @@
 		E66475EF1C8E4ADD00C9996F = {
 			isa = PBXGroup;
 			children = (
+				E66476451C907CD700C9996F /* QuartzCore.framework */,
 				E66475FA1C8E4ADD00C9996F /* NavigationConcept */,
 				E66475F91C8E4ADD00C9996F /* Products */,
 			);
@@ -54,14 +94,48 @@
 		E66475FA1C8E4ADD00C9996F /* NavigationConcept */ = {
 			isa = PBXGroup;
 			children = (
+				E664763C1C8F655D00C9996F /* Font */,
+				E664763B1C8F60AC00C9996F /* Extensions */,
 				E66475FB1C8E4ADD00C9996F /* AppDelegate.swift */,
 				E66475FD1C8E4ADD00C9996F /* ViewController.swift */,
 				E66475FF1C8E4ADD00C9996F /* Main.storyboard */,
 				E66476021C8E4ADD00C9996F /* Assets.xcassets */,
 				E66476041C8E4ADD00C9996F /* LaunchScreen.storyboard */,
 				E66476071C8E4ADD00C9996F /* Info.plist */,
+				E664760D1C8E4B5700C9996F /* ConceptCollectionViewController.swift */,
+				E664760F1C8E4B9200C9996F /* ConceptCollectionViewFlowLayout.swift */,
+				E66476111C8E4C2E00C9996F /* ConceptCollectionViewCell.swift */,
+				E66476131C8F127900C9996F /* ConceptCollectionViewLayoutAttributes.swift */,
+				E66476571C90C2A900C9996F /* ConceptDetailAnimationTransitionViewController.swift */,
+				E66476191C8F1BC300C9996F /* ConceptDetailViewController.swift */,
+				E66476471C907D2800C9996F /* BaseCustomView.swift */,
+				E66476491C907D5A00C9996F /* ConceptPageCount.swift */,
+				E664764B1C907D6600C9996F /* ConceptPageCount.xib */,
+				E66476511C90BE4600C9996F /* Listing.swift */,
+				E66476551C90BEE100C9996F /* Review.swift */,
+				E66476531C90BE8000C9996F /* Person.swift */,
 			);
 			path = NavigationConcept;
+			sourceTree = "<group>";
+		};
+		E664763B1C8F60AC00C9996F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E66476391C8F60A900C9996F /* UIView.swift */,
+				E664764D1C90B07400C9996F /* UILabel.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		E664763C1C8F655D00C9996F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E664763D1C8F656900C9996F /* pier-bold-italic.otf */,
+				E664763E1C8F656900C9996F /* pier-bold.otf */,
+				E664763F1C8F656900C9996F /* pier-italic.otf */,
+				E66476401C8F656900C9996F /* pier-regular.otf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +170,7 @@
 				TargetAttributes = {
 					E66475F71C8E4ADD00C9996F = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = QTWPSC4W56;
 					};
 				};
 			};
@@ -122,9 +197,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66476411C90731200C9996F /* pier-bold-italic.otf in Resources */,
+				E66476441C90731200C9996F /* pier-regular.otf in Resources */,
 				E66476061C8E4ADD00C9996F /* LaunchScreen.storyboard in Resources */,
 				E66476031C8E4ADD00C9996F /* Assets.xcassets in Resources */,
+				E66476431C90731200C9996F /* pier-italic.otf in Resources */,
+				E66476421C90731200C9996F /* pier-bold.otf in Resources */,
 				E66476011C8E4ADD00C9996F /* Main.storyboard in Resources */,
+				E664764C1C907D6600C9996F /* ConceptPageCount.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +215,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E664763A1C8F60A900C9996F /* UIView.swift in Sources */,
 				E66475FE1C8E4ADD00C9996F /* ViewController.swift in Sources */,
+				E66476581C90C2A900C9996F /* ConceptDetailAnimationTransitionViewController.swift in Sources */,
+				E66476101C8E4B9200C9996F /* ConceptCollectionViewFlowLayout.swift in Sources */,
+				E664764E1C90B07400C9996F /* UILabel.swift in Sources */,
+				E664764A1C907D5A00C9996F /* ConceptPageCount.swift in Sources */,
+				E66476121C8E4C2E00C9996F /* ConceptCollectionViewCell.swift in Sources */,
+				E664760E1C8E4B5700C9996F /* ConceptCollectionViewController.swift in Sources */,
+				E66476141C8F127900C9996F /* ConceptCollectionViewLayoutAttributes.swift in Sources */,
+				E664761A1C8F1BC300C9996F /* ConceptDetailViewController.swift in Sources */,
+				E66476561C90BEE100C9996F /* Review.swift in Sources */,
 				E66475FC1C8E4ADD00C9996F /* AppDelegate.swift in Sources */,
+				E66476541C90BE8000C9996F /* Person.swift in Sources */,
+				E66476481C907D2800C9996F /* BaseCustomView.swift in Sources */,
+				E66476521C90BE4600C9996F /* Listing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +342,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NavigationConcept/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rentpath.NavigationConcept;
@@ -260,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NavigationConcept/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rentpath.NavigationConcept;
