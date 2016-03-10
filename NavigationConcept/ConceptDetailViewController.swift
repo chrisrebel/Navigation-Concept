@@ -19,7 +19,12 @@ class ConceptDetailViewController: UIViewController {
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var bedsLabel: UILabel!
     @IBOutlet weak var bathsLabel: UILabel!
+    @IBOutlet weak var starImageView: UIImageView!
+    @IBOutlet weak var closeImageView: UIImageView!
 
+    @IBOutlet weak var favoriteTapView: UIView!
+    @IBOutlet weak var closeTapView: UIView!
+    
     @IBOutlet weak var review1: UIView!
     @IBOutlet weak var review1ProfileImage: UIImageView!
     @IBOutlet weak var review2: UIView!
@@ -28,6 +33,8 @@ class ConceptDetailViewController: UIViewController {
     @IBOutlet weak var review3ProfileImage: UIImageView!
     
     var isInitialLoad = true
+    
+    var isFavorited = false
     
     var listing: Listing!
     
@@ -38,7 +45,9 @@ class ConceptDetailViewController: UIViewController {
         review2ProfileImage.hidden = true
         review3ProfileImage.hidden = true
         
-        headerView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "tapAction"))
+        closeTapView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "tapAction"))
+        
+        favoriteTapView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "favoriteAction"))
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -63,5 +72,17 @@ class ConceptDetailViewController: UIViewController {
     
     func tapAction() {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func favoriteAction() {
+        if isFavorited {
+            starImageView.image = UIImage(named: "star")
+        } else {
+            starImageView.image = UIImage(named: "star-filled")
+            let explode = FavoriteAnimationView(frame:starImageView.frame)
+            view.addSubview(explode)
+        }
+        
+        isFavorited = !isFavorited
     }
 }

@@ -8,9 +8,18 @@
 
 import UIKit
 
+@objc
+protocol ConceptCollectionViewFlowLayoutDelegate {
+    
+    optional func conceptCollectionViewFlowLayout(conceptCollectionViewFlowLayout: ConceptCollectionViewFlowLayout, didChangePage page: Int)
+}
+
 class ConceptCollectionViewFlowLayout: UICollectionViewFlowLayout {
 
     var targetX: CGFloat = 0.0
+    var currentPage = 0
+    
+    weak var delegate: ConceptCollectionViewFlowLayoutDelegate?
     
     override func prepareLayout() {
         super.prepareLayout()
@@ -67,6 +76,12 @@ class ConceptCollectionViewFlowLayout: UICollectionViewFlowLayout {
             }
         }
         
+        let targetPage = Int(floor((targetX + _collectionView.contentInset.left) / 292.0))
+        if targetPage != currentPage {
+            currentPage = targetPage
+            delegate?.conceptCollectionViewFlowLayout?(self, didChangePage: currentPage)
+        }
+       
         return CGPoint(x: targetX, y: proposedContentOffset.y)
     }
     
@@ -85,7 +100,7 @@ class ConceptCollectionViewFlowLayout: UICollectionViewFlowLayout {
                 layoutAttribute.distanceFromCenter = attribute.center.x - CGRectGetMidX(_collectionView.bounds)
             }
         }
-        
+
         return attributesForVisibleCells
     }
         

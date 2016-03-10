@@ -4,43 +4,75 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="pier-regular.otf">
+            <string>PierSans</string>
+            <string>PierSans</string>
+            <string>PierSans</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConceptPageCount" customModule="NavigationConcept" customModuleProvider="target">
             <connections>
+                <outlet property="currentPageCountLabel1" destination="RSC-1Z-W87" id="fxB-Uj-mTn"/>
+                <outlet property="currentPageCountLabel2" destination="4Jt-Ay-Nkh" id="wXj-wW-Ske"/>
                 <outlet property="totalPageCountLabel" destination="VTe-fZ-lqo" id="jmb-Sa-mlq"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTe-fZ-lqo">
-                    <rect key="frame" x="171" y="19" width="33" height="12"/>
-                    <attributedString key="attributedText">
-                        <fragment content="5 ">
-                            <attributes>
-                                <color key="NSColor" red="0.4361059767793431" green="0.56730992855823648" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <font key="NSFont" size="12" name="PierSans"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                            </attributes>
-                        </fragment>
-                        <fragment content="/ 64">
-                            <attributes>
-                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <font key="NSFont" size="12" name="PierSans"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
-                    <nil key="highlightedColor"/>
-                    <size key="shadowOffset" width="1" height="1"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ih-QO-S3S">
+                    <rect key="frame" x="158" y="0.0" width="60" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ 04" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTe-fZ-lqo">
+                            <rect key="frame" x="15" y="5" width="25" height="40"/>
+                            <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="1" height="1"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSC-1Z-W87" userLabel="current page label 1">
+                            <rect key="frame" x="0.0" y="5" width="10" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="BtN-po-GlY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="13"/>
+                            <color key="textColor" red="0.43610597680000002" green="0.56730992859999996" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Jt-Ay-Nkh" userLabel="current page label 2">
+                            <rect key="frame" x="0.0" y="5" width="10" height="40"/>
+                            <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="13"/>
+                            <color key="textColor" red="0.43610597680000002" green="0.56730992859999996" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VTe-fZ-lqo" firstAttribute="leading" secondItem="RSC-1Z-W87" secondAttribute="trailing" constant="5" id="0nl-H1-zek"/>
+                        <constraint firstItem="4Jt-Ay-Nkh" firstAttribute="leading" secondItem="RSC-1Z-W87" secondAttribute="leading" id="6GO-rA-6qB"/>
+                        <constraint firstItem="4Jt-Ay-Nkh" firstAttribute="height" secondItem="RSC-1Z-W87" secondAttribute="height" id="Dek-8f-wmc"/>
+                        <constraint firstItem="RSC-1Z-W87" firstAttribute="top" secondItem="5ih-QO-S3S" secondAttribute="top" constant="5" id="FS6-zj-WgK"/>
+                        <constraint firstItem="4Jt-Ay-Nkh" firstAttribute="width" secondItem="RSC-1Z-W87" secondAttribute="width" id="IXS-4h-Qry"/>
+                        <constraint firstAttribute="bottom" secondItem="VTe-fZ-lqo" secondAttribute="bottom" constant="5" id="LyQ-ez-gpy"/>
+                        <constraint firstItem="RSC-1Z-W87" firstAttribute="leading" secondItem="5ih-QO-S3S" secondAttribute="leading" id="Nl4-oY-Qs4"/>
+                        <constraint firstAttribute="trailing" secondItem="VTe-fZ-lqo" secondAttribute="trailing" constant="20" id="Pjb-9Q-hKG"/>
+                        <constraint firstItem="4Jt-Ay-Nkh" firstAttribute="top" secondItem="RSC-1Z-W87" secondAttribute="top" id="ggD-tb-LKK"/>
+                        <constraint firstAttribute="bottom" secondItem="RSC-1Z-W87" secondAttribute="bottom" constant="5" id="h53-Hv-Gpn"/>
+                        <constraint firstItem="VTe-fZ-lqo" firstAttribute="top" secondItem="5ih-QO-S3S" secondAttribute="top" constant="5" id="wHc-Sm-8hD"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="VTe-fZ-lqo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4PZ-8S-ijC"/>
-                <constraint firstItem="VTe-fZ-lqo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ukg-Qp-GVy"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5ih-QO-S3S" secondAttribute="trailing" id="AoI-ks-xfT"/>
+                <constraint firstAttribute="bottom" secondItem="5ih-QO-S3S" secondAttribute="bottom" id="Lgw-Vp-Nl9"/>
+                <constraint firstItem="5ih-QO-S3S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" id="c7B-er-I0s"/>
+                <constraint firstItem="5ih-QO-S3S" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="l4c-NS-Icf"/>
+                <constraint firstItem="5ih-QO-S3S" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="n6b-nD-hdO"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

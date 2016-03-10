@@ -13,7 +13,7 @@ struct Listing {
     var name: String
     var image: String
     var address: String
-    var reviews: [Review]
+    var reviews: [Int]
     var beds: String
     var baths: String
 }

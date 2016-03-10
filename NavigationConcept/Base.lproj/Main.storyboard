@@ -21,7 +21,6 @@
             <string>PierSans</string>
             <string>PierSans</string>
             <string>PierSans</string>
-            <string>PierSans</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -76,16 +75,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3WH-qi-81w" userLabel="sub header view">
-                                <rect key="frame" x="0.0" y="81" width="375" height="18"/>
+                                <rect key="frame" x="0.0" y="80" width="375" height="19"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="popular cities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UI-iv-mO6">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="12"/>
-                                        <fontDescription key="fontDescription" name="PierSans-Bold" family="Pier Sans" pointSize="12"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="13"/>
+                                        <fontDescription key="fontDescription" name="PierSans-Bold" family="Pier Sans" pointSize="13"/>
                                         <color key="textColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="kLx-tw-baS">
-                                        <rect key="frame" x="56" y="17" width="262" height="1"/>
+                                        <rect key="frame" x="56" y="18" width="262" height="1"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="trw-Rw-VoC"/>
                                             <constraint firstAttribute="width" constant="262" id="vYD-TU-Aq9"/>
@@ -212,45 +211,6 @@
                             <constraint firstAttribute="trailing" secondItem="if2-Zx-w9c" secondAttribute="trailing" id="x5f-26-UnH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Tes-Q2-pOb">
-                        <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="gDx-aM-ET6">
-                            <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="crz-sw-eYp">
-                                <rect key="frame" x="16" y="2" width="95" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                                <state key="normal" image="star"/>
-                            </button>
-                        </barButtonItem>
-                        <view key="titleView" contentMode="scaleToFill" id="oDd-zl-rKH">
-                            <rect key="frame" x="117" y="6" width="139" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTERESTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHQ-g0-bIJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="139" height="33"/>
-                                    <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="13"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="bottom" secondItem="AHQ-g0-bIJ" secondAttribute="bottom" id="UXu-rF-seX"/>
-                                <constraint firstItem="AHQ-g0-bIJ" firstAttribute="top" secondItem="oDd-zl-rKH" secondAttribute="top" id="bOn-S6-bVa"/>
-                                <constraint firstItem="AHQ-g0-bIJ" firstAttribute="leading" secondItem="oDd-zl-rKH" secondAttribute="leading" id="h85-79-tiT"/>
-                                <constraint firstAttribute="trailing" secondItem="AHQ-g0-bIJ" secondAttribute="trailing" id="wew-bb-CeV"/>
-                            </constraints>
-                        </view>
-                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="kgf-fE-mSC">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OK0-1E-5Zj">
-                                <rect key="frame" x="262" y="0.0" width="97" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                                <state key="normal" image="settings"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
@@ -881,15 +841,35 @@
                                             <constraint firstAttribute="height" constant="20" id="sRS-px-CjC"/>
                                         </constraints>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sA-cY-O4E" userLabel="favorite tap">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="ghf-0g-tEH"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eka-3j-aXy" userLabel="close tap">
+                                        <rect key="frame" x="275" y="0.0" width="100" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="t86-Qp-6qX"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BOc-fB-WIs"/>
                                     <constraint firstItem="BAH-9e-8Gc" firstAttribute="centerY" secondItem="7j6-Vq-bpc" secondAttribute="centerY" id="E1b-xs-Ns4"/>
+                                    <constraint firstItem="4sA-cY-O4E" firstAttribute="top" secondItem="7j6-Vq-bpc" secondAttribute="top" id="Ohb-2c-L6X"/>
                                     <constraint firstAttribute="trailing" secondItem="BAH-9e-8Gc" secondAttribute="trailing" constant="30" id="PRG-Zw-HX0"/>
+                                    <constraint firstAttribute="bottom" secondItem="4sA-cY-O4E" secondAttribute="bottom" id="QvO-hE-1lM"/>
                                     <constraint firstItem="5jq-AK-uY6" firstAttribute="centerY" secondItem="7j6-Vq-bpc" secondAttribute="centerY" id="Whe-Kq-Joi"/>
                                     <constraint firstItem="CAe-Ra-4Fv" firstAttribute="centerY" secondItem="7j6-Vq-bpc" secondAttribute="centerY" id="YQM-hU-suo"/>
                                     <constraint firstItem="5jq-AK-uY6" firstAttribute="centerX" secondItem="7j6-Vq-bpc" secondAttribute="centerX" id="eyk-Q4-bSb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eka-3j-aXy" secondAttribute="trailing" id="sT5-OS-dAi"/>
+                                    <constraint firstItem="Eka-3j-aXy" firstAttribute="top" secondItem="7j6-Vq-bpc" secondAttribute="top" id="so3-Xg-g41"/>
+                                    <constraint firstItem="4sA-cY-O4E" firstAttribute="leading" secondItem="7j6-Vq-bpc" secondAttribute="leading" id="yFl-kP-PO1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Eka-3j-aXy" secondAttribute="bottom" id="z09-KE-Jix"/>
                                     <constraint firstItem="CAe-Ra-4Fv" firstAttribute="leading" secondItem="7j6-Vq-bpc" secondAttribute="leading" constant="30" id="z0d-83-DfW"/>
                                 </constraints>
                             </view>
@@ -913,7 +893,10 @@
                         <outlet property="addressLabelWidthConstraint" destination="eeo-Np-dtK" id="ibS-HS-uIq"/>
                         <outlet property="bathsLabel" destination="42a-XR-GgP" id="9fO-sM-78d"/>
                         <outlet property="bedsLabel" destination="WS2-2X-Yj2" id="PbK-y3-P2L"/>
+                        <outlet property="closeImageView" destination="BAH-9e-8Gc" id="oVG-ct-t5P"/>
+                        <outlet property="closeTapView" destination="Eka-3j-aXy" id="WaI-ff-I8k"/>
                         <outlet property="contentView" destination="f34-pJ-sP7" id="H6r-dI-dGg"/>
+                        <outlet property="favoriteTapView" destination="4sA-cY-O4E" id="WjG-PA-zQN"/>
                         <outlet property="headerView" destination="7j6-Vq-bpc" id="79r-pc-MMH"/>
                         <outlet property="photoView" destination="7Xe-II-wdg" id="DJm-dH-H0Q"/>
                         <outlet property="ratingImageView" destination="db8-aH-MU8" id="1tN-j2-m0M"/>
@@ -924,6 +907,7 @@
                         <outlet property="review3" destination="gAD-3E-RJc" id="q20-xh-ru2"/>
                         <outlet property="review3ProfileImage" destination="oEq-3w-PBH" id="eE7-2q-HS0"/>
                         <outlet property="scrollView" destination="0hI-gm-3xw" id="B3Z-Uy-7nL"/>
+                        <outlet property="starImageView" destination="CAe-Ra-4Fv" id="uXe-Q5-IQj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJB-83-hy9" userLabel="First Responder" sceneMemberID="firstResponder"/>

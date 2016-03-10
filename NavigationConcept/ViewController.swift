@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "willHideDetails", name: "willHideDetails", object: nil)
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if let layout = conceptCollectionViewController.collectionViewLayout as? ConceptCollectionViewFlowLayout {
+            layout.delegate = self
+        }
+    }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ConceptCollectionViewController" {
             conceptCollectionViewController = segue.destinationViewController as! ConceptCollectionViewController
@@ -51,5 +57,12 @@ class ViewController: UIViewController {
     func willHideDetails() {
         header.hidden = false
         footer.transform = CGAffineTransformIdentity
+    }
+}
+
+extension ViewController: ConceptCollectionViewFlowLayoutDelegate {
+    
+    func conceptCollectionViewFlowLayout(conceptCollectionViewFlowLayout: ConceptCollectionViewFlowLayout, didChangePage page: Int) {
+        pageCount.updatePage(page)
     }
 }
