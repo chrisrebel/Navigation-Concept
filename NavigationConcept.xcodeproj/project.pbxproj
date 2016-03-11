@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E64798751C914C26003980A9 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64798741C914C26003980A9 /* UIImage.swift */; };
 		E64798791C91FE3B003980A9 /* FavoriteAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64798781C91FE3B003980A9 /* FavoriteAnimationView.swift */; };
+		E647987E1C9264C5003980A9 /* GSTouchesShowingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E647987D1C9264C5003980A9 /* GSTouchesShowingWindow.m */; };
 		E66475FC1C8E4ADD00C9996F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66475FB1C8E4ADD00C9996F /* AppDelegate.swift */; };
 		E66475FE1C8E4ADD00C9996F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66475FD1C8E4ADD00C9996F /* ViewController.swift */; };
 		E66476011C8E4ADD00C9996F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66475FF1C8E4ADD00C9996F /* Main.storyboard */; };
@@ -36,6 +37,9 @@
 /* Begin PBXFileReference section */
 		E64798741C914C26003980A9 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		E64798781C91FE3B003980A9 /* FavoriteAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteAnimationView.swift; sourceTree = "<group>"; };
+		E647987B1C9264C4003980A9 /* NavigationConcept-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NavigationConcept-Bridging-Header.h"; sourceTree = "<group>"; };
+		E647987C1C9264C5003980A9 /* GSTouchesShowingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTouchesShowingWindow.h; sourceTree = "<group>"; };
+		E647987D1C9264C5003980A9 /* GSTouchesShowingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTouchesShowingWindow.m; sourceTree = "<group>"; };
 		E66475F81C8E4ADD00C9996F /* NavigationConcept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationConcept.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66475FB1C8E4ADD00C9996F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E66475FD1C8E4ADD00C9996F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E647987A1C9264B4003980A9 /* Touch */ = {
+			isa = PBXGroup;
+			children = (
+				E647987C1C9264C5003980A9 /* GSTouchesShowingWindow.h */,
+				E647987D1C9264C5003980A9 /* GSTouchesShowingWindow.m */,
+				E647987B1C9264C4003980A9 /* NavigationConcept-Bridging-Header.h */,
+			);
+			name = Touch;
+			sourceTree = "<group>";
+		};
 		E66475EF1C8E4ADD00C9996F = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +108,7 @@
 		E66475FA1C8E4ADD00C9996F /* NavigationConcept */ = {
 			isa = PBXGroup;
 			children = (
+				E647987A1C9264B4003980A9 /* Touch */,
 				E664763C1C8F655D00C9996F /* Font */,
 				E664763B1C8F60AC00C9996F /* Extensions */,
 				E66475FB1C8E4ADD00C9996F /* AppDelegate.swift */,
@@ -230,6 +245,7 @@
 				E66475FC1C8E4ADD00C9996F /* AppDelegate.swift in Sources */,
 				E66476481C907D2800C9996F /* BaseCustomView.swift in Sources */,
 				E66476521C90BE4600C9996F /* Listing.swift in Sources */,
+				E647987E1C9264C5003980A9 /* GSTouchesShowingWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,12 +358,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NavigationConcept/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rentpath.NavigationConcept;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NavigationConcept/NavigationConcept-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -355,11 +374,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NavigationConcept/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rentpath.NavigationConcept;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NavigationConcept/NavigationConcept-Bridging-Header.h";
 			};
 			name = Release;
 		};

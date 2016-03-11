@@ -163,10 +163,14 @@ extension ConceptCollectionViewController: ConceptDetailAnimationTransitionViewC
     
     func conceptDetailAnimationTransitionViewControllerDelegateDidStartAnimateIn(conceptDetailAnimationTransitionViewController: ConceptDetailAnimationTransitionViewController) {
         expandedCell?.hidden = true
-        NSNotificationCenter.defaultCenter().postNotificationName("didShowDetails", object: self)
+        NSNotificationCenter.defaultCenter().postNotificationName("willShowDetails", object: self)
     }
     
     func conceptDetailAnimationTransitionViewControllerDidCompleteAnimateIn(conceptDetailAnimationTransitionViewController: ConceptDetailAnimationTransitionViewController) {
+        NSNotificationCenter.defaultCenter().postNotificationName("didShowDetails", object: self)
+    }
+    
+    func conceptDetailAnimationTransitionViewControllerWillDismiss(conceptDetailAnimationTransitionViewController: ConceptDetailAnimationTransitionViewController) {
         expandedCell?.hidden = false
         NSNotificationCenter.defaultCenter().postNotificationName("willHideDetails", object: self)
     }

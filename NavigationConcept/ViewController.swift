@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "willShowDetails", name: "willShowDetails", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "didShowDetails", name: "didShowDetails", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "willHideDetails", name: "willHideDetails", object: nil)
     }
@@ -47,16 +48,23 @@ class ViewController: UIViewController {
         return listings
     }
     
-    func didShowDetails() {
+    func willShowDetails() {
         header.hidden = true
         UIView.animateWithDuration(0.3, animations: {
             self.footer.transform = CGAffineTransformMakeTranslation(0.0, 50.0)
         })
     }
     
+    func didShowDetails() {
+        pageCount.hidden = true
+        subHeader.hidden = true
+    }
+    
     func willHideDetails() {
         header.hidden = false
         footer.transform = CGAffineTransformIdentity
+        pageCount.hidden = false
+        subHeader.hidden = false
     }
 }
 

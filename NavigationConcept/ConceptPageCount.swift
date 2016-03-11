@@ -59,7 +59,7 @@ class ConceptPageCount: BaseCustomView {
         labelToAnimateIn.text = "\(page + 1)"
         labelToAnimateIn.transform = CGAffineTransformMakeTranslation(0.0, -CGRectGetHeight(view.frame))
         
-        UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.BeginFromCurrentState, animations: {
+        UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.BeginFromCurrentState, animations: {
             labelToAnimateOut.transform = CGAffineTransformMakeTranslation(0.0, CGRectGetHeight(self.view.frame))
             labelToAnimateIn.transform = CGAffineTransformIdentity
             },  completion: nil)

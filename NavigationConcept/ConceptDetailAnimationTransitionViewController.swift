@@ -13,6 +13,7 @@ protocol ConceptDetailAnimationTransitionViewControllerDelegate {
     
     optional func conceptDetailAnimationTransitionViewControllerDelegateDidStartAnimateIn(conceptDetailAnimationTransitionViewController: ConceptDetailAnimationTransitionViewController)
     optional func conceptDetailAnimationTransitionViewControllerDidCompleteAnimateIn(conceptDetailAnimationTransitionViewController: ConceptDetailAnimationTransitionViewController)
+    optional func conceptDetailAnimationTransitionViewControllerWillDismiss(conceptDetailAnimationTransitionViewController: ConceptDetailAnimationTransitionViewController)
 }
 
 class ConceptDetailAnimationTransitionViewController: UIViewController {
@@ -151,6 +152,11 @@ class ConceptDetailAnimationTransitionViewController: UIViewController {
         
         animateIn()
         delegate?.conceptDetailAnimationTransitionViewControllerDelegateDidStartAnimateIn?(self)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        delegate?.conceptDetailAnimationTransitionViewControllerWillDismiss?(self)
     }
 
     func animateIn() {

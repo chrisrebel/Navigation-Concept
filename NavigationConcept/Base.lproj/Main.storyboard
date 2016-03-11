@@ -497,7 +497,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="667" translatesAutoresizingMaskIntoConstraints="NO" id="f34-pJ-sP7" userLabel="content view">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="892"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="935"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WoO-mt-QZR" userLabel="photo container view">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
@@ -681,7 +681,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldH-uP-zUa" userLabel="review 2">
-                                                <rect key="frame" x="0.0" y="516" width="375" height="138"/>
+                                                <rect key="frame" x="0.0" y="516" width="375" height="181"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dee" translatesAutoresizingMaskIntoConstraints="NO" id="xWi-9U-cbL">
                                                         <rect key="frame" x="30" y="20" width="30" height="30"/>
@@ -710,8 +710,8 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbj-8B-dCn">
-                                                        <rect key="frame" x="30" y="65" width="315" height="43"/>
-                                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis nisl ut mi hendrerit, nec facilisis ex auctor. Quisque nec tristique quam.</string>
+                                                        <rect key="frame" x="30" y="65" width="315" height="86"/>
+                                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis nisl ut mi hendrerit, nec facilisis ex auctor. Quisque nec tristique quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis nisl ut mi hendrerit, nec facilisis ex auctor. Quisque nec tristique quam.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -735,7 +735,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAD-3E-RJc" userLabel="review 3">
-                                                <rect key="frame" x="0.0" y="654" width="375" height="138"/>
+                                                <rect key="frame" x="0.0" y="697" width="375" height="138"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mac" translatesAutoresizingMaskIntoConstraints="NO" id="oEq-3w-PBH">
                                                         <rect key="frame" x="30" y="20" width="30" height="30"/>
