@@ -3,4 +3,7 @@ Hackathon project to try and replicate the animation from this gif.  https://d13
 
 The code is not great, but posting it here for the curious. 
 
+![animation](http://i.imgur.com/PcvKm9W.gif)
+
+
 Youtube link that shows the animation in action: https://www.youtube.com/watch?v=QNeiK1tG_wg
